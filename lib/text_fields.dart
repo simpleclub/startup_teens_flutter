@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(home: ToDo()));
 
 class ToDo extends StatefulWidget {
-  
   @override
   _ToDoState createState() => _ToDoState();
 }
@@ -30,7 +29,6 @@ class _ToDoState extends State<ToDo> {
       }
     );
   }
-
 
   @override
   Widget build(BuildContext context) {
