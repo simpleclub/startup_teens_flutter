@@ -10,7 +10,7 @@ class ToDo extends StatefulWidget {
 }
 
 class _ToDoState extends State<ToDo> {
-  Map<String, bool> products = {};
+  Map<String, bool> products = {'Flutter lernen': false, 'App schreiben': false, 'Reich werden': false, 'Alkohol kaufen': false ,'Spaß haben': false};
 
   void addItem(String item) {
     setState(() {
@@ -38,14 +38,6 @@ class _ToDoState extends State<ToDo> {
         return AddItemDialog(addItem);
       }
     );
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    if (products.isEmpty) {
-      products['Todo erstellen'] = false;
-    }
   }
 
   @override
