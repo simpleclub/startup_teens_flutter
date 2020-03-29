@@ -70,7 +70,6 @@ class _ToDoState extends State<ToDo> {
         backgroundColor: Color.fromRGBO(35, 152, 185, 100),
       ),
       
-      // Wait until [connectToFirebase] returns stream
       body: FutureBuilder(
           
           // Wait until [connectToFirebase] returns stream
@@ -92,6 +91,9 @@ class _ToDoState extends State<ToDo> {
                     return new Text('Error: ${snapshot.error}');
                   }
                   else if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Center(child: CircularProgressIndicator());
+                  } 
+                  else if (snapshot.data.data == null) {
                     return Center(child: CircularProgressIndicator());
                   }
                   else {

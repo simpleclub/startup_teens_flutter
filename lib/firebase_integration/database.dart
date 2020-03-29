@@ -11,10 +11,10 @@ class DatabaseService {
 
   // if document with name userID exists, return true, otherwise create one
   Future checkIfUserExists() async {
-    if (await firestoreData.document(userID).get() != null) {
+    if ((await firestoreData.document(userID).get()).exists) {
       return true;
     } else {
-      await firestoreData.document(userID).updateData({
+      await firestoreData.document(userID).setData({
         'To Do anlegen': false,
       });
       return false;
