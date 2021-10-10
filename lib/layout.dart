@@ -55,6 +55,7 @@ class ToDo extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 22),
                 child: ListTile(
                   leading: Checkbox(
+                    onChanged: (value) {},
                     value: false,
                   ),
                   title: Text(

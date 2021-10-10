@@ -35,6 +35,7 @@ class ToDoItem extends StatelessWidget {
       child: ListTile(
         contentPadding: EdgeInsets.symmetric(vertical: 8.0),
         leading: Checkbox(
+          onChanged: (value) {},
           value: false,
         ),
         title: Text(
