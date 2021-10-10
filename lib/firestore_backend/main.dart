@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'add_item_dialog.dart';
-import 'to_do_item.dart';
-import 'database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+
+import 'add_item_dialog.dart';
+import 'database.dart';
 
 void main() => runApp(MaterialApp(home: ToDo()));
 
