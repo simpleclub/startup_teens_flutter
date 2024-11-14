@@ -57,5 +57,5 @@ to merge the pull request.
 
 ## Contributor License Agreement
 
-We require contributors to sign our [Contributor License Agreement (CLA)](https://simpleclub.page.link/cla). 
+We require contributors to sign our [Contributor License Agreement (CLA)](https://bit.ly/simpleclub-cla). 
 In order for us to review and merge your code, please follow the link and sign it.
